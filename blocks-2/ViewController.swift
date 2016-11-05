@@ -13,13 +13,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var block1 = Block(blockTotal: 1)
+        var block1 = Block(blockTotal: 5)
         let timer = Timer.new(every: 1.second) {
             block1.countToTen()
         }
         
-        while block1.blockTotal >= 0 {
-            timer.start()
+        while true {
+            if block1.blockTotal > 0 {
+                timer.start()
+                if block1.blockTotal == 0 {
+                    break
+                }
+            }
+            print(block1.blockTotal)
+
+            timer.invalidate()
         }
 
     }

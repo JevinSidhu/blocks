@@ -10,10 +10,10 @@ import Foundation
 import UIKit
 
 struct Block {
-    var blockTotal: Int
+    var blockTotal: Float
     
     mutating func countToTen() {
-        blockTotal -= 1
+        blockTotal -= 0.05
         print(blockTotal)
     }
 

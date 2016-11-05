@@ -18,13 +18,15 @@ class ViewController: UIViewController {
         progressBar.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 2 )
         progressBar.transform = progressBar.transform.scaledBy(x: -1, y: 70)
         
-        var block1 = Block(blockTotal: 2)
-        let timer = Timer.new(every: 1.second) {
+        let startAmount = 10.0
+        var block1 = Block(blockTotal: Float(startAmount))
+        let timer = Timer.new(every: 0.005.second) {
             (timer: Timer) in
             block1.countToTen()
-            self.progressBar.progress = Float(block1.blockTotal) / 2
-            if block1.blockTotal == 0 {
+            self.progressBar.progress = Float(block1.blockTotal) / 10
+            if block1.blockTotal < 0 {
                 print("resetting counter")
+                block1.blockTotal = Float(startAmount)
                 self.progressBar.backgroundColor = UIColor(red: 243/255, green: 129/255, blue: 129/255, alpha: 0.5)
 
             }

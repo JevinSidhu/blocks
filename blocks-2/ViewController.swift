@@ -10,26 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var progressBar: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var block1 = Block(blockTotal: 5)
+        var block1 = Block(blockTotal: 11)
         let timer = Timer.new(every: 1.second) {
+            (timer: Timer) in
             block1.countToTen()
-        }
-        
-        while true {
-            if block1.blockTotal > 0 {
-                timer.start()
-                if block1.blockTotal == 0 {
-                    break
-                }
+            self.progressBar.progress = Float(block1.blockTotal) / 10
+            if block1.blockTotal == 0 {
+                print("resetting counter")
+                block1.blockTotal = 11
             }
-            print(block1.blockTotal)
-
-            timer.invalidate()
         }
-
+        timer.start()
     }
 
     override func didReceiveMemoryWarning() {

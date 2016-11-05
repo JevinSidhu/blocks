@@ -25,6 +25,7 @@ class ViewController: UIViewController {
             self.progressBar.progress = Float(block1.blockTotal) / 2
             if block1.blockTotal == 0 {
                 print("resetting counter")
+//                block1.blockTotal = 11
                 self.progressBar.backgroundColor = UIColor(red: 243/255, green: 129/255, blue: 129/255, alpha: 0.5)
 
             }

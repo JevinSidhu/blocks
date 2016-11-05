@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="icT-1X-J4W"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="icT-1X-J4W">
+                                <frame key="frameInset" minX="16" minY="103" width="132" height="3"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.20784313730000001" green="0.72941176470000002" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="icT-1X-J4W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E8U-5c-snP"/>
-                            <constraint firstItem="icT-1X-J4W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="G8E-8m-Qe9"/>
-                            <constraint firstItem="icT-1X-J4W" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NGQ-zZ-0fo"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="progressBar" destination="icT-1X-J4W" id="nJ3-NP-3Iz"/>
@@ -34,6 +33,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.10853967761538197" blue="0.87115442000667564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

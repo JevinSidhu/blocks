@@ -13,6 +13,7 @@
 		B2661D811DCD9DBD00249C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2661D801DCD9DBD00249C69 /* Assets.xcassets */; };
 		B2661D841DCD9DBD00249C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2661D821DCD9DBD00249C69 /* LaunchScreen.storyboard */; };
 		B2661D8C1DCD9E2800249C69 /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2661D8B1DCD9E2800249C69 /* BlockModel.swift */; };
+		B28FB66C1DCE280C00F5D472 /* Circles Promo #1.png in Resources */ = {isa = PBXBuildFile; fileRef = B28FB66B1DCE280C00F5D472 /* Circles Promo #1.png */; };
 		B2C1625E1DCDCADB0099DD5F /* SwiftyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C1625D1DCDCADB0099DD5F /* SwiftyTimer.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		B2661D831DCD9DBD00249C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2661D851DCD9DBD00249C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2661D8B1DCD9E2800249C69 /* BlockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
+		B28FB66B1DCE280C00F5D472 /* Circles Promo #1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Circles Promo #1.png"; sourceTree = "<group>"; };
 		B2C1625D1DCDCADB0099DD5F /* SwiftyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				B2661D8B1DCD9E2800249C69 /* BlockModel.swift */,
 				B2C1625D1DCDCADB0099DD5F /* SwiftyTimer.swift */,
 				B2661D7D1DCD9DBD00249C69 /* Main.storyboard */,
+				B28FB66B1DCE280C00F5D472 /* Circles Promo #1.png */,
 				B2661D801DCD9DBD00249C69 /* Assets.xcassets */,
 				B2661D821DCD9DBD00249C69 /* LaunchScreen.storyboard */,
 				B2661D851DCD9DBD00249C69 /* Info.plist */,
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2661D841DCD9DBD00249C69 /* LaunchScreen.storyboard in Resources */,
+				B28FB66C1DCE280C00F5D472 /* Circles Promo #1.png in Resources */,
 				B2661D811DCD9DBD00249C69 /* Assets.xcassets in Resources */,
 				B2661D7F1DCD9DBD00249C69 /* Main.storyboard in Resources */,
 			);

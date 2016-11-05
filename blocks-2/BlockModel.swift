@@ -9,20 +9,14 @@
 import Foundation
 import UIKit
 
-var counter: Int = 0
-var clock = Timer.scheduledTimer(timeInterval: 600.0, target: BlockModel.self, selector: Selector(("countToTen")), userInfo: nil, repeats: true)
-
-struct BlockModel {
-    var timer = 1
-
+struct Block {
+    var blockTotal: Int
+    
     mutating func countToTen() {
-        if counter != 6 {
-            timer -= 1
-            print(timer)
-            counter += 1
-        }
-        else {
-            print("fuck off")
-        }
+        blockTotal -= 1
+        print(blockTotal)
     }
+
 }
+
+
